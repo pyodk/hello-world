@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Deno",
+      "type": "shell",
+      "command": "deno run --allow-net src/main.ts",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$tsc"],
+      "detail": "Run the main application using Deno."
+    },
+    {
+      "label": "Lint",
+      "type": "shell",
+      "command": "deno lint",
+      "group": "none",
+      "problemMatcher": ["$tsc"],
+      "detail": "Lint the project files using Deno."
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "deno test",
+      "group": "test",
+      "problemMatcher": ["$tsc"],
+      "detail": "Run tests for the project using Deno."
+    }
+  ]
+}

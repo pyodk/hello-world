@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["deno.ns", "deno.window"],
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["*.test.ts"]
+    }
+  },
+  "fmt": {
+    "options": {
+      "lineWidth": 80,
+      "indentWidth": 2
+    }
+  }
+}
